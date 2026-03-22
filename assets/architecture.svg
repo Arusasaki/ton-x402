@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B0E1A"/>
+      <stop offset="100%" style="stop-color:#111528"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="340" rx="12" fill="url(#bg2)"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-family="'Inter', -apple-system, sans-serif" font-size="14" font-weight="700" fill="#8890A4" letter-spacing="2">PACKAGE ARCHITECTURE</text>
+
+  <!-- MCP Server (top) -->
+  <rect x="280" y="55" width="240" height="48" rx="10" fill="rgba(0,152,234,0.12)" stroke="#0098EA" stroke-width="1.5"/>
+  <text x="400" y="76" text-anchor="middle" font-family="'SF Mono', monospace" font-size="12" font-weight="700" fill="#0098EA">@ton-x402/mcp</text>
+  <text x="400" y="93" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#8890A4">MCP Server for AI Agents</text>
+
+  <!-- Client (middle left) -->
+  <rect x="80" y="145" width="220" height="48" rx="10" fill="rgba(0,184,255,0.12)" stroke="#00B8FF" stroke-width="1.5"/>
+  <text x="190" y="166" text-anchor="middle" font-family="'SF Mono', monospace" font-size="12" font-weight="700" fill="#00B8FF">@ton-x402/client</text>
+  <text x="190" y="183" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#8890A4">Auto-paying HTTP Client</text>
+
+  <!-- Server (middle right) -->
+  <rect x="500" y="145" width="220" height="48" rx="10" fill="rgba(139,92,246,0.12)" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="610" y="166" text-anchor="middle" font-family="'SF Mono', monospace" font-size="12" font-weight="700" fill="#8B5CF6">@ton-x402/server</text>
+  <text x="610" y="183" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#8890A4">Hono Middleware</text>
+
+  <!-- Verify (middle right under server) -->
+  <rect x="540" y="225" width="160" height="40" rx="8" fill="rgba(34,197,94,0.12)" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="620" y="250" text-anchor="middle" font-family="'SF Mono', monospace" font-size="11" font-weight="700" fill="#22C55E">@ton-x402/verify</text>
+
+  <!-- Core (bottom center) -->
+  <rect x="250" y="280" width="300" height="48" rx="10" fill="rgba(245,158,11,0.12)" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="400" y="301" text-anchor="middle" font-family="'SF Mono', monospace" font-size="12" font-weight="700" fill="#F59E0B">@ton-x402/core</text>
+  <text x="400" y="318" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#8890A4">Types, Headers, Utilities (zero deps)</text>
+
+  <!-- Arrows: MCP → Client -->
+  <line x1="350" y1="103" x2="240" y2="145" stroke="#0098EA" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <polygon points="242,142 236,148 246,148" fill="#0098EA"/>
+  <text x="275" y="122" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#546E7A">uses</text>
+
+  <!-- Arrows: Server → Verify -->
+  <line x1="620" y1="193" x2="620" y2="225" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <polygon points="620,222 616,228 624,228" fill="#8B5CF6"/>
+
+  <!-- Arrows: Client → Core -->
+  <line x1="250" y1="193" x2="350" y2="280" stroke="#00B8FF" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <polygon points="348,277 346,283 354,281" fill="#00B8FF"/>
+
+  <!-- Arrows: Verify → Core -->
+  <line x1="580" y1="265" x2="500" y2="280" stroke="#22C55E" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <polygon points="502,278 496,282 504,284" fill="#22C55E"/>
+
+  <!-- Arrows: Server → Core -->
+  <line x1="550" y1="193" x2="470" y2="280" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <polygon points="472,277 466,283 474,283" fill="#8B5CF6"/>
+
+  <!-- Package count badge -->
+  <rect x="636" y="12" width="140" height="24" rx="12" fill="rgba(0,152,234,0.15)" stroke="rgba(0,152,234,0.3)" stroke-width="1"/>
+  <text x="706" y="28" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#0098EA">5 packages &#xB7; 0 deps*</text>
+</svg>

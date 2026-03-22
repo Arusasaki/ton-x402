@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+export { createServer, startServer } from "./server.js";
+
+// When run as CLI, start the MCP server
+import { startServer } from "./server.js";
+startServer().catch((err) => {
+  console.error("Failed to start MCP server:", err);
+  process.exit(1);
+});

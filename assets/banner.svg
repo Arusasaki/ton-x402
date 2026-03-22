@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#05070F" />
+      <stop offset="40%" style="stop-color:#0A0F20" />
+      <stop offset="100%" style="stop-color:#0D1528" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0098EA" />
+      <stop offset="100%" style="stop-color:#00D4FF" />
+    </linearGradient>
+    <linearGradient id="accent-v" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0098EA;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0098EA;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B" />
+      <stop offset="100%" style="stop-color:#FBBF24" />
+    </linearGradient>
+    <linearGradient id="beam-l" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0098EA;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#0098EA;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="beam-r" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:0" />
+    </linearGradient>
+    <radialGradient id="core-glow" cx="50%" cy="42%" r="35%">
+      <stop offset="0%" style="stop-color:#0098EA;stop-opacity:0.12" />
+      <stop offset="60%" style="stop-color:#0098EA;stop-opacity:0.03" />
+      <stop offset="100%" style="stop-color:#0098EA;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="logo-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0098EA;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0098EA;stop-opacity:0" />
+    </radialGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <clipPath id="banner-clip">
+      <rect width="1280" height="640" rx="0" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#banner-clip)">
+    <!-- Deep space background -->
+    <rect width="1280" height="640" fill="url(#bg)" />
+
+    <!-- Diagonal light beams -->
+    <polygon points="0,0 500,0 0,640" fill="url(#beam-l)" />
+    <polygon points="1280,0 780,0 1280,640" fill="url(#beam-r)" />
+
+    <!-- Central radial glow -->
+    <ellipse cx="640" cy="270" rx="500" ry="320" fill="url(#core-glow)" />
+
+    <!-- Hex grid pattern (subtle) -->
+    <g opacity="0.025" stroke="#0098EA" stroke-width="0.6" fill="none">
+      <!-- Row 1 -->
+      <polygon points="160,80 190,63 220,80 220,114 190,131 160,114" />
+      <polygon points="220,80 250,63 280,80 280,114 250,131 220,114" />
+      <polygon points="280,80 310,63 340,80 340,114 310,131 280,114" />
+      <!-- Row 2 -->
+      <polygon points="940,80 970,63 1000,80 1000,114 970,131 940,114" />
+      <polygon points="1000,80 1030,63 1060,80 1060,114 1030,131 1000,114" />
+      <polygon points="1060,80 1090,63 1120,80 1120,114 1090,131 1060,114" />
+      <!-- Row 3 -->
+      <polygon points="100,500 130,483 160,500 160,534 130,551 100,534" />
+      <polygon points="160,500 190,483 220,500 220,534 190,551 160,534" />
+      <!-- Row 4 -->
+      <polygon points="1060,480 1090,463 1120,480 1120,514 1090,531 1060,514" />
+      <polygon points="1120,480 1150,463 1180,480 1180,514 1150,531 1120,514" />
+    </g>
+
+    <!-- Floating particles -->
+    <g opacity="0.3">
+      <circle cx="120" cy="180" r="1.5" fill="#0098EA" />
+      <circle cx="280" cy="120" r="1" fill="#00D4FF" />
+      <circle cx="380" cy="520" r="1.5" fill="#0098EA" />
+      <circle cx="520" cy="90" r="1" fill="#00B8FF" />
+      <circle cx="760" cy="80" r="1.5" fill="#0098EA" />
+      <circle cx="900" cy="540" r="1" fill="#00D4FF" />
+      <circle cx="1000" cy="150" r="1.5" fill="#0098EA" />
+      <circle cx="1150" cy="190" r="1" fill="#00B8FF" />
+      <circle cx="1100" cy="420" r="1.5" fill="#0098EA" />
+      <circle cx="200" cy="450" r="1" fill="#00D4FF" />
+      <circle cx="450" cy="160" r="0.8" fill="#0098EA" />
+      <circle cx="830" cy="170" r="0.8" fill="#00D4FF" />
+    </g>
+
+    <!-- Network constellation lines -->
+    <g opacity="0.06" stroke="#0098EA" stroke-width="0.8">
+      <!-- Left cluster -->
+      <line x1="80" y1="300" x2="200" y2="250" />
+      <line x1="200" y1="250" x2="280" y2="320" />
+      <line x1="280" y1="320" x2="180" y2="380" />
+      <line x1="180" y1="380" x2="80" y2="300" />
+      <line x1="200" y1="250" x2="180" y2="380" />
+      <!-- Right cluster -->
+      <line x1="1000" y1="280" x2="1100" y2="230" />
+      <line x1="1100" y1="230" x2="1200" y2="300" />
+      <line x1="1200" y1="300" x2="1100" y2="370" />
+      <line x1="1100" y1="370" x2="1000" y2="280" />
+      <line x1="1100" y1="230" x2="1100" y2="370" />
+    </g>
+    <!-- Constellation nodes -->
+    <g opacity="0.15">
+      <circle cx="80" cy="300" r="2.5" fill="#0098EA" />
+      <circle cx="200" cy="250" r="2" fill="#0098EA" />
+      <circle cx="280" cy="320" r="2.5" fill="#0098EA" />
+      <circle cx="180" cy="380" r="2" fill="#0098EA" />
+      <circle cx="1000" cy="280" r="2.5" fill="#0098EA" />
+      <circle cx="1100" cy="230" r="2" fill="#0098EA" />
+      <circle cx="1200" cy="300" r="2.5" fill="#0098EA" />
+      <circle cx="1100" cy="370" r="2" fill="#0098EA" />
+    </g>
+
+    <!-- Flow visualization: 402 payment cycle (left side) -->
+    <g transform="translate(115, 135)" opacity="0.12">
+      <!-- Curved path representing payment flow -->
+      <path d="M0,120 Q80,-20 160,120 Q240,260 320,120" fill="none" stroke="#0098EA" stroke-width="1.5" />
+      <circle cx="0" cy="120" r="4" fill="#0098EA" opacity="0.6" />
+      <circle cx="160" cy="120" r="4" fill="#22C55E" opacity="0.6" />
+      <circle cx="320" cy="120" r="4" fill="#F59E0B" opacity="0.6" />
+    </g>
+
+    <!-- Flow visualization: data stream (right side) -->
+    <g transform="translate(850, 135)" opacity="0.12">
+      <path d="M0,120 Q80,260 160,120 Q240,-20 320,120" fill="none" stroke="#00D4FF" stroke-width="1.5" />
+      <circle cx="0" cy="120" r="4" fill="#F59E0B" opacity="0.6" />
+      <circle cx="160" cy="120" r="4" fill="#22C55E" opacity="0.6" />
+      <circle cx="320" cy="120" r="4" fill="#0098EA" opacity="0.6" />
+    </g>
+
+    <!-- Orbiting ring around logo area -->
+    <ellipse cx="640" cy="195" rx="120" ry="120" fill="none" stroke="#0098EA" stroke-width="0.5" opacity="0.08" />
+    <ellipse cx="640" cy="195" rx="160" ry="160" fill="none" stroke="#0098EA" stroke-width="0.3" opacity="0.05" />
+    <ellipse cx="640" cy="195" rx="200" ry="85" fill="none" stroke="#00D4FF" stroke-width="0.4" opacity="0.06" transform="rotate(-15, 640, 195)" />
+
+    <!-- Logo glow backdrop -->
+    <ellipse cx="640" cy="195" rx="80" ry="80" fill="url(#logo-glow)" />
+
+    <!-- TON Diamond Logo (centered, prominent) -->
+    <g transform="translate(580, 130) scale(2.2)" filter="url(#soft-glow)">
+      <path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="#0098EA"/>
+      <path d="M37.5603 15.6277H18.4386C14.9228 15.6277 12.6944 19.4202 14.4632 22.4861L26.2644 42.9409C27.0345 44.2765 28.9644 44.2765 29.7345 42.9409L41.5381 22.4861C43.3045 19.4251 41.0761 15.6277 37.5627 15.6277H37.5603ZM26.2548 36.8068L23.6847 31.8327L17.4833 20.7414C17.0742 20.0315 17.5795 19.1218 18.4362 19.1218H26.2524V36.8092L26.2548 36.8068ZM38.5108 20.739L32.3118 31.8351L29.7417 36.8068V19.1194H37.5579C38.4146 19.1194 38.9199 20.0291 38.5108 20.739Z" fill="white"/>
+    </g>
+
+    <!-- Project name -->
+    <text x="640" y="360" text-anchor="middle" font-family="'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif" font-size="86" font-weight="800" letter-spacing="-3" filter="url(#text-glow)">
+      <tspan fill="#FFFFFF">ton-</tspan><tspan fill="url(#accent)">x402</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text x="640" y="410" text-anchor="middle" font-family="'Inter', -apple-system, sans-serif" font-size="21" font-weight="400" fill="#7A8399" letter-spacing="0.5">HTTP-native machine payments for the AI agent era</text>
+
+    <!-- Separator line -->
+    <line x1="540" y1="435" x2="740" y2="435" stroke="url(#accent)" stroke-width="1" opacity="0.3" />
+
+    <!-- Feature badges row -->
+    <g transform="translate(640, 475)" text-anchor="middle">
+      <!-- 402 Protocol -->
+      <g transform="translate(-300, 0)">
+        <rect x="-62" y="-16" width="124" height="32" rx="16" fill="rgba(0,152,234,0.08)" stroke="rgba(0,152,234,0.25)" stroke-width="1"/>
+        <text y="5" font-family="'SF Mono', 'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#0098EA">HTTP 402</text>
+      </g>
+      <!-- AI Agents -->
+      <g transform="translate(-150, 0)">
+        <rect x="-62" y="-16" width="124" height="32" rx="16" fill="rgba(0,152,234,0.08)" stroke="rgba(0,152,234,0.25)" stroke-width="1"/>
+        <text y="5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0098EA">AI Agents</text>
+      </g>
+      <!-- MCP -->
+      <g transform="translate(0, 0)">
+        <rect x="-62" y="-16" width="124" height="32" rx="16" fill="rgba(0,152,234,0.08)" stroke="rgba(0,152,234,0.25)" stroke-width="1"/>
+        <text y="5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0098EA">MCP Server</text>
+      </g>
+      <!-- Zero Deps -->
+      <g transform="translate(150, 0)">
+        <rect x="-62" y="-16" width="124" height="32" rx="16" fill="rgba(0,152,234,0.08)" stroke="rgba(0,152,234,0.25)" stroke-width="1"/>
+        <text y="5" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#0098EA">Zero Deps Core</text>
+      </g>
+      <!-- 1B+ Users -->
+      <g transform="translate(300, 0)">
+        <rect x="-62" y="-16" width="124" height="32" rx="16" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+        <text y="5" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#F59E0B">1B+ Users</text>
+      </g>
+    </g>
+
+    <!-- Code showcase (bottom center) -->
+    <g transform="translate(340, 530)">
+      <rect x="0" y="0" width="600" height="76" rx="12" fill="rgba(8,12,24,0.9)" stroke="rgba(30,35,64,0.6)" stroke-width="1"/>
+      <!-- Window dots -->
+      <circle cx="18" cy="14" r="4" fill="#FF5F57" opacity="0.7" />
+      <circle cx="32" cy="14" r="4" fill="#FFBD2E" opacity="0.7" />
+      <circle cx="46" cy="14" r="4" fill="#28CA41" opacity="0.7" />
+      <!-- Code line 1 -->
+      <text x="20" y="42" font-family="'SF Mono', 'JetBrains Mono', 'Fira Code', monospace" font-size="13" fill="#546E7A">// Agent pays 0.05 TON, gets premium data</text>
+      <!-- Code line 2 -->
+      <text x="20" y="62" font-family="'SF Mono', 'JetBrains Mono', 'Fira Code', monospace" font-size="13">
+        <tspan fill="#C792EA">const</tspan>
+        <tspan fill="#E0E0E0"> data = </tspan>
+        <tspan fill="#C792EA">await</tspan>
+        <tspan fill="#E0E0E0"> client.</tspan>
+        <tspan fill="#82AAFF">fetch</tspan>
+        <tspan fill="#89DDFF">(</tspan>
+        <tspan fill="#C3E88D">"https://api.example/premium"</tspan>
+        <tspan fill="#89DDFF">)</tspan>
+        <tspan fill="#E0E0E0">;</tspan>
+      </text>
+    </g>
+
+    <!-- Bottom gradient fade -->
+    <rect x="0" y="610" width="1280" height="30" fill="url(#bg)" opacity="0.5" />
+  </g>
+</svg>

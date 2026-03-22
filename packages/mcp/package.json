@@ -1,0 +1,41 @@
+{
+  "name": "@ton-x402/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for AI agents to use x402-protected APIs on TON",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "ton-x402-mcp": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ton-x402/core": "*",
+    "@ton-x402/client": "*",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0",
+    "@ton/core": "^0.63.0",
+    "@ton/ton": "^16.2.0",
+    "@ton/crypto": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  },
+  "license": "MIT"
+}

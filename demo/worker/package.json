@@ -1,0 +1,16 @@
+{
+  "name": "ton-x402-demo",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.0",
+    "@cloudflare/workers-types": "^4.20250313.0",
+    "typescript": "^5.8.0"
+  }
+}

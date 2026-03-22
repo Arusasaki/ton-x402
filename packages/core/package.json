@@ -1,0 +1,28 @@
+{
+  "name": "@ton-x402/core",
+  "version": "0.1.0",
+  "description": "Shared types and utilities for the ton-x402 protocol",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  },
+  "license": "MIT"
+}
